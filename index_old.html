@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<!-- <script type="text/javascript">
+		if(screen.width<=800)
+			window.location="mobile.html";
+	</script> -->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>i.Fest 2016</title>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- Feather Icons -->
+	<link rel="stylesheet" type="text/css" href="fonts/feather/style.css">
+	<!-- General demo styles & header -->
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<!-- Component styles -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/honeycombs.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css" />
+
+	<link rel="stylesheet" type="text/css" href="es/css/component.css" />
+	<link rel="stylesheet" type="text/css" href="es/css/normalize.css" />
+
+
+	<script src="js/jquery.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+
+
+
+	<script src="es/js/draggabilly.pkgd.min.js"></script>
+	<script src="es/js/elastiStack.js"></script>
+
+
+	<script type="text/javascript" src="http://ricostacruz.com/jquery.transit/jquery.transit.min.js"></script>
+</head>
+<body data-anm=".anm">
+
+<!-- Register -->
+	<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+          <form action="reg.php" target="_blank" method="get">
+
+	          <h4 class="modal-title">Register for Events</h4>
+	        </div>
+	        <div class="modal-body">
+	          <div>
+	          	<p>Enter Your Unique ID</p>
+	          	<input type="text" name="uid">
+	          </div>
+
+	          <div style="margin-top:15px;">
+	          	<p>Enter Your Password</p>
+	          	<input type="password" name="password">
+	          </div>
+	        </div>
+	        <div class="modal-footer">
+	          <input type="submit" value="Login" class="btn btn-success">
+	        </div>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Register End -->
+	<!-- Main container -->
+	<div class="container">
+		<!-- Blueprint header -->
+		<header class="bp-header cf" style="position:relative">
+			<!--<span>Blueprint <span class="bp-icon bp-icon-about" data-content="The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration."></span></span>
+			<h1>Zoom Slider</h1>-->
+			<div>
+				<a href="http://www.daiict.ac.in/" target='_blank'><img src="images/da.png" height="80"></a>
+				<a href="http://ieee.daiict.ac.in" style="margin-left: 20px" target='_blank'><img src="images/ieee.png" height="60"></a>
+			</div>
+			<!-- <div style="position: absolute;right: 50%;margin-right: -4em">
+				<a href="http://edgx.xyz"><img src="images/logos/edgx.png" style='width: 10em'></a>
+			</div> -->
+			<nav id="social-block">
+				<a href="http://www.facebook.com/ifest16" target='_blank'><i class="fa fa-facebook"></i></a>
+				<!-- <a href="https://www.youtube.com/channel/UCoO2A8cSVs3fXp22LKJ17UQ" target='_blank'><i class="fa fa-youtube-play"></i></a> -->
+				<a href="http://www.instagram.com/i.fest/" target="_blank"><i class="fa fa-instagram" target='_blank'></i></a>
+
+				<a href="mailto:ifest2016daiict@gmail.com" target="_blank"><i class="fa fa-envelope" target='_blank'></i></a>
+
+			</nav>
+		</header>
+		<nav id="event-slider">
+			<div style="position: relative; width: 100%; height: 100%;">
+				<!-- <ul id="event-menu-icons">
+					<li class="openIcon" data-item="0" data-toggle="tooltip" data-placement="top" title="computeaid"><img class="event-slider-menu" src="images/logos/compute_aid.png"></li>
+					<li class="openIcon" data-item="1" data-toggle="tooltip" data-placement="top" title="robotics"><img class="event-slider-menu" src="images/logos/robotics.png"></li>
+					<li class="openIcon" data-item="2" data-toggle="tooltip" data-placement="top" title="cyber crusade"><img class="event-slider-menu" src="images/logos/gaming.png"></li>
+					<li class="openIcon" data-item="3" data-toggle="tooltip" data-placement="top" title="food for fun"><img class="event-slider-menu" src="images/logos/food.png"></li>
+					<li class="openIcon" data-item="4" data-toggle="tooltip" data-placement="top" title="money matters"><img class="event-slider-menu" src="images/logos/money_matters_new.png"></li>
+					<li class="openIcon" data-item="5" data-toggle="tooltip" data-placement="top" title="in focus"><img class="event-slider-menu" src="images/logos/photography.png"></li>
+					<li class="openIcon" data-item="6" data-toggle="tooltip" data-placement="top" title="newron"><img class="event-slider-menu" src="images/logos/newron.png"></li>
+					<li class="openIcon" data-item="7" data-toggle="tooltip" data-placement="top" title="innovati"><img class="event-slider-menu" src="images/logos/innovati.png"></li>
+					<li class="openIcon" data-item="8" data-toggle="tooltip" data-placement="top" title="create it"><img class="event-slider-menu" src="images/logos/creative.png"></li>
+					<li class="openIcon" data-item="9" data-toggle="tooltip" data-placement="top" title="just like that"><img class="event-slider-menu" src="images/logos/fun.png"></li>
+					<li class="openIcon" data-item="10" data-toggle="tooltip" data-placement="top" title="elevation"><img class="event-slider-menu" src="images/logos/elevation.png"></li>
+				</ul> -->
+
+				<!-- <ul id="event-menu-icons">
+					<li class="openIcon" data-item="0" data-toggle="tooltip" data-placement="top" title="computeaid"><img class="event-slider-menu" src="images/logos/compute_aid.png"></li>
+					<li class="openIcon" data-item="1" data-toggle="tooltip" data-placement="top" title="robotics"><img class="event-slider-menu" src="images/logos/robotics.png"></li>
+					<li class="openIcon" data-item="2" data-toggle="tooltip" data-placement="top" title="cyber crusade"><img class="event-slider-menu" src="images/logos/gaming.png"></li>
+					<li class="openIcon" data-item="3" data-toggle="tooltip" data-placement="top" title="food for fun"><img class="event-slider-menu" src="images/logos/food.png"></li>
+					<li class="openIcon" data-item="4" data-toggle="tooltip" data-placement="top" title="money matters"><img class="event-slider-menu" src="images/logos/money_matters_new.png"></li>
+					<li class="openIcon" data-item="5" data-toggle="tooltip" data-placement="top" title="in focus"><img class="event-slider-menu" src="images/logos/photography.png"></li>
+					<li class="openIcon" data-item="6" data-toggle="tooltip" data-placement="top" title="newron"><img class="event-slider-menu" src="images/logos/newron.png"></li>
+					<li class="openIcon" data-item="7" data-toggle="tooltip" data-placement="top" title="innovati"><img class="event-slider-menu" src="images/logos/innovati.png"></li>
+					<li class="openIcon" data-item="8" data-toggle="tooltip" data-placement="top" title="create it"><img class="event-slider-menu" src="images/logos/creative.png"></li>
+					<li class="openIcon" data-item="9" data-toggle="tooltip" data-placement="top" title="just like that"><img class="event-slider-menu" src="images/logos/fun.png"></li>
+					<li class="openIcon" data-item="10" data-toggle="tooltip" data-placement="top" title="elevation"><img class="event-slider-menu" src="images/logos/elevation.png"></li>
+				</ul> -->
+
+
+
+				<!-- MAIN NAV HERE -->
+				<ul id="main-menu-items" style="position: absolute; width: 100%; margin: 0 auto">
+
+					<!-- <li data-toggle="tooltip" data-placement="top" title="ABOUT I.FEST" id="event-menu-reveal"><img class="main-menu-icon" src="images/logos/star.png" height="30"></li> -->
+
+					<li class="openIcon" data-item="3" data-toggle="tooltip" data-placement="top" title="ABOUT I.FEST"><img class="main-menu-icon" src="images/logo/about.png" height="30" style="margin-right:9px"></li>
+
+					<li class="openIcon" data-item="11" data-toggle="tooltip" data-placement="top" title="EVENTS"><img class="event-slider-menu" src="images/logo/events.png"></li>
+
+					<li class="openIcon" data-item="12" data-toggle="tooltip" data-placement="top" title="GALLERY"><img class="event-slider-menu" src="images/logo/gallery.png"></li>
+
+					<a href=""><li class="openIcon" data-toggle="tooltip" data-placement="top" title="schedule" style="margin-right:7px"><img class="main-menu-icon" src="images/logos/calender.png" height="30"></li></a>
+
+					<li class="openIcon" data-item="14" data-toggle="tooltip" data-placement="top" title="CONTACT"><img class="event-slider-menu" src="images/logos/about.png"></li></a>									
+
+					<li class="openIcon" data-item="15" data-toggle="tooltip" data-placement="top" title="sponsors"><img class="event-slider-menu" src="images/logos/inr_mod.png"></li>
+
+					<li class="openIcon" data-item="16" data-toggle="tooltip" data-placement="top" title="the team"><img class="event-slider-menu" src="images/logos/team.png"></li>
+
+					<a data-toggle="modal" data-target="#myModal" target="_blank"><li data-toggle="tooltip" data-placement="top" title="Register"><img class="main-menu-icon" src="images/logos/registration.png" height="30"></li></a>
+					
+					
+					
+					<!-- <li data-toggle="tooltip" data-placement="top" title="mega events" id="mega-event-menu-reveal"><img class="main-menu-icon" src="images/logos/star.png" height="30"></li> -->
+				</ul>
+
+				<!-- <ul id="other-menu-icons">
+					<li class="openIcon" data-item="17" data-toggle="tooltip" data-placement="top" title="Fun Events"><img class="event-slider-menu" src="images/fun_menu.png"></li>
+					<li class="openIcon" data-item="18" data-toggle="tooltip" data-placement="top" title="Walkathon"><img class="event-slider-menu" src="images/logos/walkathon.png"></li>
+					<li class="openIcon" data-item="19" data-toggle="tooltip" data-placement="top" title="EDG Night"><img class="event-slider-menu" src="images/night.png"></li>
+					<li class="openIcon" data-item="20" data-toggle="tooltip" data-placement="top" title="EDG Talks"><img class="event-slider-menu" src="images/talk.png"></li>
+				</ul> -->
+
+
+				<script type="text/javascript">
+				var eventMenuReveal = false;
+				var megaEventMenuReveal = false;
+				$("#event-menu-icons li").hide();
+				$("#other-menu-icons li").hide();
+				$("#event-menu-reveal").click(function(){
+					if(eventMenuReveal ==  false){
+						var eventIcons = $("#event-menu-icons li");
+						revealMenu(eventIcons);
+						eventMenuReveal = true;
+					}
+					else{
+						var eventIcons = $("#event-menu-icons li").get().reverse();
+						hideMenu(eventIcons);
+						eventMenuReveal = false;
+					}
+				});
+
+				$(".openIcon").hover(function(){
+					var top = $(this).find('img').offset().top -10;
+					console.log(top);
+					$(this).find('img').transition({scale:1.4});
+					//$(this).find('img').offset({top:top});
+				}, function(){
+					var top = $(this).find('img').offset().top +10;
+					$(this).find('img').transition({scale:1});
+					//$(this).find('img').offset({top:top});
+				});
+
+				$("#mega-event-menu-reveal").click(function(){
+					if(megaEventMenuReveal ==  false){
+						var eventIcons = $("#other-menu-icons li").get().reverse();
+						revealMenu(eventIcons);
+						megaEventMenuReveal = true;
+					}
+					else{
+						var eventIcons = $("#other-menu-icons li");
+						hideMenu(eventIcons);
+						megaEventMenuReveal = false;
+					}
+				});
+
+				revealMenu = function(elList){
+					$.each(elList, function(key, el){
+						$(el).delay(100*key).fadeIn(200);
+					});
+				}
+				hideMenu = function(elList){
+					console.log("Hide");
+					$.each(elList, function(key,el){
+						$(el).delay(100*key).fadeOut(200);
+					});
+				}
+				</script>
+			</div>
+		</nav>
+		<!-- Grid -->
+		<!--
+		<div id="layers">
+		  <div class="layer layer-1"></div>
+		  <div class="layer layer-2"></div>
+		  <div class="layer layer-3"></div>
+		  <div class="layer layer-4"></div>
+		  <div class="layer layer-5"></div>
+		</div>
+	-->
+	<canvas style="position: absolute; z-index: -1; top:0px"></canvas>
+	<section class="slider">
+		<!-- Compute Aid -->
+		<div class="slide" data-content="computeaid">
+			<div class="slide__mover">
+				<div class="zoomer flex-center">
+					<div class="preview">
+						<img src="images/categories/compute_aid.png"/>
+						<div class="zoomer__area zoomer__area--size-2"></div>
+					</div>
+				</div>
+			</div>
+			<div class="slide-title-wrapper">
+				<h2 class="slide-title">Compute Aid</h2>
+			</div>
+		</div>
+		<!-- Robotics -->
+		<div class="slide" data-content="robotics">
+			<div class="slide__mover">
+				<div class="zoomer flex-center">
+					<div class="preview">
+						<img src="images/categories/robot_mod.png"/>
+						<div class="zoomer__area zoomer__area--size-4"></div>
+					</div>
+				</div>
+			</div>
+			<div class="slide-title-wrapper">
+				<h2 class="slide-title">Robotics</h2>
+			</div>
+		</div>
+		<!-- Cyber Crusade -->
+		<div class="slide" data-content="cybercrusade">
+			<div class="slide__mover">
+				<div class="zoomer flex-center">
+					<div class="preview">
+						<img src="images/categories/Gaming.png" height="200"/>
+						<div class="zoomer__area zoomer__area--size-3"></div>
+					</div>
+				</div>
+			</div>
+			<div class="slide-title-wrapper">
+				<h2 class="slide-title">Cyber Crusade</h2>
+			</div>
+		</div>
+		<!-- Food for Fun -->
+		<div class="slide" data-content="foodforfun">
+			<div class="slide__mover">
+				<div class="zoomer flex-center">
+					<div class="preview">
+						<img src="images/categories/about.png" height="200"/>
+						<div class="zoomer__area zoomer__area--size-5"></div>
+					</div>
+				</div>
+			</div>
+			<div class="slide-title-wrapper">
+				<h2 class="slide-title">About i.Fest</h2>
+			</div>
+		</div>
+		<!-- Money Matters -->
+		<div class="slide" data-content="moneymatters">
+			<div class="slide__mover">
+				<div class="zoomer flex-center">
+					<div class="preview rounded">
+						<img src="images/categories/Money_matters.png" height="200"/>
+						<div class="zoomer__area zoomer__area--size-1"></div>
+					</div>
+				</div>
+			</div>
+			<div class="slide-title-wrapper">
+				<h2 class="slide-title">Money Matters</h2>
+			</div>
+		</div>
+		<!-- In Focus -->			
+		<div class="slide" data-content="infocus">
+			<div class="slide__mover">
+				<div class="zoomer flex-center">
+					<div class="preview rounded">
+						<img src="images/categories/In_focus.png" height="200"/>
+						<div class="zoomer__area zoomer__area--size-1"></div>
+					</div>
+				</div>
+			</div>
+			<div class="slide-title-wrapper">
+				<h2 class="slide-title">In Focus</h2>
+			</div>
+		</div>
+		<!-- Newron -->
+		<div class="slide" data-content="newron">
+			<div class="slide__mover">
+				<div class="zoomer flex-center">
+					<div class="preview rounded">
+						<img src="images/categories/newron.png" height="200"/>
+						<div class="zoomer__area zoomer__area--size-1"></div>
+					</div>
+				</div>
+			</div>
+			<div class="slide-title-wrapper">
+				<h2 class="slide-title">Newron</h2>
+			</div>
+		</div>
+		<!-- Innovati -->
+		<div class="slide" data-content="innovati">
+			<div class="slide__mover">
+				<div class="zoomer flex-center">
+					<div class="preview rounded">
+						<img src="images/categories/Innovati.png" height="200"/>
+						<div class="zoomer__area zoomer__area--size-1"></div>
+					</div>
+				</div>
+			</div>
+			<div class="slide-title-wrapper">
+				<h2 class="slide-title">Innovati</h2>
+			</div>
+		</div>
+		<!-- Create It -->
+		<div class="slide" data-content="createit">
+			<div class="slide__mover">
+				<div class="zoomer flex-center">
+					<div class="preview rounded">
+						<img src="images/categories/Create_it.png" height="200"/>
+						<div class="zoomer__area zoomer__area--size-1"></div>
+					</div>
+				</div>
+			</div>
+			<div class="slide-title-wrapper">
+				<h2 class="slide-title">Create It</h2>
+			</div>
+		</div>
+		<!-- Just Like That -->
+		<div class="slide" data-content="justlikethat">
+			<div class="slide__mover">
+				<div class="zoomer flex-center">
+					<div class="preview rounded">
+						<img src="images/categories/just_like_that.png" height="200"/>
+						<div class="zoomer__area zoomer__area--size-1"></div>
+					</div>
+				</div>
+			</div>
+			<div class="slide-title-wrapper">
+				<h2 class="slide-title">Just Like That</h2>
+			</div>
+		</div>
+		<!-- Elevation -->
+		<div class="slide" data-content="elevation">
+			<div class="slide__mover">
+				<div class="zoomer flex-center">
+					<div class="preview rounded">
+						<img src="images/categories/elevation.png" height="200"/>
+						<div class="zoomer__area zoomer__area--size-1"></div>
+					</div>
+				</div>
+			</div>
+			<div class="slide-title-wrapper">
+				<h2 class="slide-title">Elevation</h2>
+			</div>
+		</div>
+		<!-- Campus Ambassador -->
+		<div class="slide" data-content="campusambassador">
+			<div class="slide__mover">
+				<div class="zoomer flex-center">
+					<div class="preview rounded">
+						<img src="images/categories/events.png" height="200"/>
+						<div class="zoomer__area zoomer__area--size-1"></div>
+					</div>
+				</div>
+			</div>
+			<a><div class="slide-title-wrapper">
+				<h2 class="slide-title">Events</h2>
+			</div></a>
+		</div>
+
+
+
+
+<!--  -->
+		
+
+
+<!-- gallery -->
+			<div class="slide" data-content="gallery">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<div class="preview rounded">
+							<img src="images/categories/gallery.png" height="200"/>
+							<div class="zoomer__area zoomer__area--size-1"></div>
+						</div>
+					</div>
+				</div>
+				<div class="slide-title-wrapper">
+					<h2 class="slide-title">Gallery</h2>
+				</div>
+			</div>
+
+
+
+		<!-- About Us -->
+			<div class="slide" data-content="aboutus">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<div class="preview rounded">
+							<img src="images/about.png" height="200"/>
+							<div class="zoomer__area zoomer__area--size-1"></div>
+						</div>
+					</div>
+				</div>
+				<div class="slide-title-wrapper">
+					<h2 class="slide-title">About Us</h2>
+				</div>
+			</div>
+			<!-- Contact -->
+			<div class="slide" data-content="reachus">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<div class="preview rounded">
+							<img src="images/categories/contact.png" height="200"/>
+							<div class="zoomer__area zoomer__area--size-1"></div>
+						</div>
+					</div>
+				</div>
+				<div class="slide-title-wrapper">
+					<h2 class="slide-title">Reach Out To Us</h2>
+				</div>
+			</div>
+		<!-- Sponsors -->
+		<div class="slide" data-content="sponsors">
+			<div class="slide__mover">
+				<div class="zoomer flex-center">
+					<div class="preview rounded">
+						<img src="images/categories/sponsors.png" height="200"/>
+						<div class="zoomer__area zoomer__area--size-1"></div>
+					</div>
+				</div>
+			</div>
+			<div class="slide-title-wrapper">
+				<h2 class="slide-title">Sponsors</h2>
+			</div>
+		</div>
+		<!-- Know the Team -->
+		<div class="slide" data-content="theteam">
+			<div class="slide__mover">
+				<div class="zoomer flex-center">
+					<div class="preview rounded">
+						<img src="images/categories/team.png" height="200"/>
+						<div class="zoomer__area zoomer__area--size-1"></div>
+					</div>
+				</div>
+			</div>
+			<div class="slide-title-wrapper">
+				<h2 class="slide-title">Team i.Fest</h2>
+			</div>
+		</div>
+
+		<!-- Fun Event -->
+		<div class="slide" data-content="funevent">
+			<div class="slide__mover">
+				<div class="zoomer flex-center">
+					<div class="preview rounded">
+						<img src="images/fun.png" height="200"/>
+						<div class="zoomer__area zoomer__area--size-1"></div>
+					</div>
+				</div>
+			</div>
+			<div class="slide-title-wrapper">
+				<h2 class="slide-title">Fun Events</h2>
+			</div>
+		</div>
+
+		<!-- Walkathon -->
+		<div class="slide" data-content="walkathon">
+			<div class="slide__mover">
+				<div class="zoomer flex-center">
+					<a href="https://www.facebook.com/events/1008346415870854/" target="_blank"><div class="preview rounded">
+						<img src="images/categories/walkathon.png" height="200"/>
+						<div class="zoomer__area zoomer__area--size-1"></div>
+					</div>
+                                        </a>
+				</div>
+			</div>
+			<div class="slide-title-wrapper invisible">
+				<h2 class="slide-title">Walkathon</h2>
+			</div>
+		</div>
+
+		<!-- EDG Night -->
+		<div class="slide" data-content="edgnight">
+			<div class="slide__mover">
+				<div class="zoomer flex-center">
+					<div class="preview rounded">
+						<img src="images/talks.png" height="200"/>
+						<div class="zoomer__area zoomer__area--size-1"></div>
+					</div>
+				</div>
+			</div>
+			<div class="slide-title-wrapper">
+				<h2 class="slide-title">EDG Night</h2>
+			</div>
+		</div>
+
+		<!-- EDG Talks -->
+		<div class="slide" data-content="edgtalks">
+			<div class="slide__mover">
+				<div class="zoomer flex-center">
+					<div class="preview rounded">
+						<img src="images/nights.png" height="200"/>
+						<div class="zoomer__area zoomer__area--size-1"></div>
+					</div>
+				</div>
+			</div>
+			<div class="slide-title-wrapper">
+				<h2 class="slide-title">EDG Talks</h2>
+			</div>
+		</div>
+
+			<!--
+			<nav class="slider__nav">
+				<button class="button button--nav-prev"><i class="icon icon--arrow-left"></i><span class="text-hidden">Previous product</span></button>
+				<button class="button button--zoom"><i class="icon icon--zoom"></i><span class="text-hidden">View details</span></button>
+				<button class="button button--nav-next"><i class="icon icon--arrow-right"></i><span class="text-hidden">Next product</span></button>
+			</nav>-->
+			<!-- Edge -->
+			<div class="slide slide--current" data-content="edge">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<div class="preview rounded">
+							<img src="images/logo.png"  style="margin-bottom:80px;height:250px;margin-left: 30px;"/>
+							<!-- <p>2016</p> -->
+							<div class="zoomer__area zoomer__area--size-1"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!--<div class="slide slide--current" data-content="edge">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<div class="preview" id="landing-screen">
+							<img src="images/edge_date.png" class="spotlight">
+							<div class="zoomer__area zoomer__area--size-1"></div>
+							<img src="images/clouds.png" class="cloud anm" id="cloud1" data-speed-x="-10">
+							<img src="images/clouds.png" class="cloud anm" id="cloud2" data-speed-x="-10">
+							<img src="images/clouds.png" class="cloud anm" id="cloud3" data-speed-x="-10">
+						</div>
+					</div>
+				</div>
+			</div>-->
+		</section>
+		<!-- /slider-->
+		<style type="text/css">
+		#landing-screen{
+			position: relative;
+			height: 100%;
+			width: 100%;
+			text-align: center;
+		}
+		.cloud{
+			position: absolute;
+			bottom: 0px;
+			height: 120px!important
+		}
+		#cloud1{
+			left: 52%;
+			height: 140px!important;
+		}
+		#cloud2{
+			left: 28%;
+			height: 140px!important;
+		}
+		#cloud3{
+			left: 55%;
+			top: 10%;
+		}
+		.spotlight{
+			position: absolute;
+			bottom: 0px;
+			left: 50%;
+			height: 300px!important;
+			margin-left: -175px;
+		}
+
+		.content__item-inner h2{
+			font-family: 'Arkhip';
+		}
+		.event-name{
+			font-family: 'Adam';
+		}
+		.inner-text{
+			font-family: 'Adam';
+			font-size: 12px;
+			/*padding-top: 0px!important;*/
+		}
+		.inner-text a{
+			text-decoration: none;
+		}
+#modal-event-rules-value a, #modal-event-description a{
+color:blue;}
+#modal-event-rules-value a:hover, #modal-event-description a:hover{
+color:blue; border-bottom: 1px dashed blue;}
+
+		</style>
+
+		<section class="content">
+			<!-- Robotics -->
+			<div class="content__item" id="robotics" style="width: 100%;">
+				<img class="content__item-img rounded-right" src="images/robot_mod.png" alt="Robotics" />
+				<div class="content__item-inner" style="width: 100%;">
+					<h2>Robotics</h2>
+					<div class="row">
+						<div class="col-md-4 event" data-id="41">
+							<img src="images/icons/robotics/xpedition.png" class="event-image">
+							<div class="event-name" data-name="xpedition">Xpedition</div>
+						</div>
+						<div class="col-md-4 event" data-id="39">
+							<img src="images/icons/robotics/xcelsior.png" class="event-image">
+							<div class="event-name" data-name="xcelsior">Xcelsior</div>
+						</div>
+						<div class="col-md-4 event" data-id="43">
+							<img src="images/icons/robotics/xport.png" class="event-image">
+							<div class="event-name" data-name="xport">Xport</div>
+						</div>
+						<div class="col-md-4 event" data-id="37">
+							<img src="images/icons/robotics/exult.png" class="event-image">
+							<div class="event-name" data-name="exult">eXult</div>
+						</div>
+						<div class="col-md-4 event" data-id="36">
+							<img src="images/icons/robotics/blitzkriegx.png" class="event-image">
+							<div class="event-name" data-name="blitzkriegx">Blitzkrieg X</div>
+						</div>
+						<div class="col-md-4 event" data-id="35">
+							<img src="images/icons/robotics/aerostrix.png" class="event-image">
+							<div class="event-name" data-name="aerostrix">AerostriX</div>
+						</div>
+						<div class="col-md-4 event" data-id="40">
+							<img src="images/icons/robotics/xoccer.png" class="event-image">
+							<div class="event-name" data-name="xoccer">Xoccer</div>
+						</div>
+						<div class="col-md-4 event" data-id="42">
+							<img src="images/icons/robotics/xplore.png" class="event-image">
+							<div class="event-name" data-name="xplore">Xplore</div>
+						</div>
+						<div class="col-md-4 event" data-id="38">
+							<img src="images/icons/robotics/perplexity.png" class="event-image">
+							<div class="event-name" data-name="perplexity">Perplexity</div>
+						</div>
+						<div class="col-md-4 event" data-id="44">
+							<img src="images/icons/robotics/3xtreet.png" class="event-image">
+							<div class="event-name" data-name="xtreet">Xtreet</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<style type="text/css">
+			img.content__item-img{
+				display: none;
+			}
+			</style>
+			<!-- ComputeAid -->
+			<div class="content__item" id="computeaid" style="width: 100%;">
+				<img class="content__item-img rounded-right" src="images/imac.png" alt="Apple Watch Content" />
+				<div class="content__item-inner" style="width: 100%;">
+					<h2>Compute Aid</h2>
+					<div class="row">
+						<div class="col-md-4 event" data-id="1">
+							<img src="images/icons/computeaid/flawless.png" class="event-image">
+							<div class="event-name" data-name="flawless">Flawless</div>
+							<div class="border-bottom"></div>
+						</div>
+						<div class="col-md-4 event" data-id="2">
+							<img src="images/icons/computeaid/Bug_Hunt.png" class="event-image">
+							<div class="event-name" data-name="bughunt">Bug Hunt</div>
+						</div>
+						<div class="col-md-4 event" data-id="3">
+							<img src="images/icons/computeaid/Crypto_quest.png" class="event-image">
+							<div class="event-name" data-name="cryptoquest">Crypto Quest</div>
+						</div>
+						<div class="col-md-4 event" data-id="4">
+							<img src="images/icons/computeaid/Code_mart.png" class="event-image">
+							<div class="event-name" data-name="codemart">Code Mart</div>
+						</div>
+						<div class="col-md-4 event" data-id="5">
+							<img src="images/icons/computeaid/Code_out.png" class="event-image">
+							<div class="event-name" data-name="codeout">Code Out</div>
+						</div>
+						<div class="col-md-4 event" data-id="6">
+							<img src="images/icons/computeaid/Game_of_zones.png" class="event-image">
+							<div class="event-name" data-name="gameofzones">Game of Zones</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Cyber Crusade -->
+			<div class="content__item" id="cybercrusade" style="width: 100%;">
+				<!--<img class="content__item-img rounded-right" src="images/categories/Gaming.png" alt="Cyber Crusade" />-->
+				<div class="content__item-inner" style="width: 100%;">
+					<h2>Cyber Crusade</h2>
+					<div class="row">
+						<div class="col-md-4 event" data-id="8">
+							<img src="images/icons/gaming/cs_go.png" class="event-image">
+							<div class="event-name" data-name="cscollegeleague">CS College League</div>
+							<div class="border-bottom"></div>
+						</div>
+						<div class="col-md-4 event" data-id="7">
+							<img src="images/icons/gaming/cs_go.png" class="event-image">
+							<div class="event-name" data-name="csproleague">CS Pro League</div>
+							<div class="border-bottom"></div>
+						</div>
+						<div class="col-md-4 event" data-id="9">
+							<img src="images/icons/gaming/dota.png" class="event-image">
+							<div class="event-name" data-name="dota">Dota 2</div>
+							<div class="border-bottom"></div>
+						</div>
+						<div class="col-md-4 event" data-id="10">
+							<img src="images/icons/gaming/mortal_kombat.png" class="event-image">
+							<div class="event-name" data-name="mortalkombat">Mortal Kombat</div>
+							<div class="border-bottom"></div>
+						</div>
+						<div class="col-md-4 event" data-id="11">
+							<img src="images/icons/gaming/nfs_mw.png" class="event-image">
+							<div class="event-name" data-name="needforspeed">Need For Speed Most Wanted</div>
+							<div class="border-bottom"></div>
+						</div>
+						<!-- <div class="col-md-4 event" data-id="12">
+							<img src="images/icons/gaming/nfs.png" class="event-image">
+							<div class="event-name" data-name="needforspeed">Need For Speed 12</div>
+							<div class="border-bottom"></div>
+						</div> -->
+						<div class="col-md-4 event" data-id="14">
+							<img src="images/icons/gaming/fifa_11.png" class="event-image">
+							<div class="event-name" data-name="fifacollegeleague">FIFA College League</div>
+							<div class="border-bottom"></div>
+						</div>
+						<div class="col-md-4 event" data-id="13">
+							<img src="images/icons/gaming/fifa_15.png" class="event-image">
+							<div class="event-name" data-name="fifaproleague">FIFA 16 Pro League</div>
+							<div class="border-bottom"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- About i.Fest -->
+			<div class="content__item" id="foodforfun" style="width: 100%;">
+				<img class="content__item-img rounded-right" src="images/categories/about.png" />
+				<div class="content__item-inner" style="width: 100%;padding-bottom:400px;">
+					<h2>About i.Fest</h2>
+					<div class="row"><br>
+						<p style="font-size:30px;">i.Fest is an idea conceptualized by IEEE Student Branch at DA-IICT. Our main aim is to bring the budding engineers from all over India to a common platform so that they can share their knowledge with their fellow imaginers. The next big thing for engineers is to pull out graphics from computer or television screen and integrate them into real world environment. With these innovative engineers coming up, it will become more pervasive and ubiquitous. So i.Fest’16 presents in the theme of <b>Augmented Reality</b>, where creative genius comes alive.</p>
+					</div>
+				</div>
+			</div>
+			<!-- Money Matters -->
+			<div class="content__item" id="moneymatters" style="width: 100%;">
+				<img class="content__item-img rounded-right" src="images/robot_mod.png" alt="Innovati" />
+				<div class="content__item-inner" style="width: 100%;">
+					<h2>Money Matters</h2>
+					<div class="row">
+						<div class="col-md-4 event" data-id="22">
+							<img src="images/icons/moneymatters/bplan.png" class="event-image">
+							<div class="event-name" data-name="bplan">B-Plan</div>
+							<div class="border-bottom"></div>
+						</div>
+						<div class="col-md-4 event" data-id="23">
+							<img src="images/icons/moneymatters/bquiz.png" class="event-image">
+							<div class="event-name" data-name="bquiz">B-Quiz</div>
+							<div class="border-bottom"></div>
+						</div>
+						<div class="col-md-4 event" data-id="24">
+							<img src="images/icons/moneymatters/addomedia.png" class="event-image">
+							<div class="event-name" data-name="addomedia">Addomedia</div>
+							<div class="border-bottom"></div>
+						</div>
+<div class="col-md-4 event" data-id="25">
+							<img src="images/icons/moneymatters/stockit.png" class="event-image">
+							<div class="event-name" data-name="stockit">Stock It</div>
+							<div class="border-bottom"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Innovati -->
+			<div class="content__item" id="innovati" style="width: 100%;">
+				<img class="content__item-img rounded-right" src="images/robot_mod.png" alt="Innovati" />
+				<div class="content__item-inner" style="width: 100%;">
+					<h2>Innovati</h2>
+					<div class="row">
+						<div class="col-md-4 event" data-id="45">
+							<img src="images/icons/innovati/project_view.png" class="event-image">
+							<div class="event-name" data-name="projectview">Project View</div>
+							<div class="border-bottom"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Just Like That -->
+			<div class="content__item" id="justlikethat" style="width: 100%;">
+				<img class="content__item-img rounded-right" src="images/robot_mod.png" alt="Apple Watch Content" />
+				<div class="content__item-inner" style="width: 100%;">
+					<h2>Just Like That</h2>
+					<div class="row">
+						<div class="col-md-4 event" data-id="49">
+							<img src="images/icons/justlikethat/khuljasimsim.png" class="event-image">
+							<div class="event-name" data-name="khuljasimsim">Khul Ja Sim Sim</div>
+							<div class="border-bottom"></div>
+						</div>
+						<div class="col-md-4 event" data-id="48">
+							<img src="images/icons/justlikethat/selfie.png" class="event-image">
+							<div class="event-name" data-name="getselfieishwithx">Get Selfie-ish With X</div>
+							<div class="border-bottom"></div>
+						</div>
+					</div>
+				</div>
+			</div>		
+			<!-- Create It -->
+			<div class="content__item" id="createit" style="width: 100%;">
+				<img class="content__item-img rounded-right" src="images/categories/Create_it.png" alt="Create It" />
+				<div class="content__item-inner" style="width: 100%;">
+					<h2>Create It</h2>
+					<div class="row">
+						<div class="col-md-4 event" data-id="46">
+							<img src="images/icons/justlikethat/selfie.png" class="event-image">
+							<div class="event-name" data-name="ragstoriches">Rags to Riches</div>
+							<div class="border-bottom"></div>
+						</div>
+						<div class="col-md-4 event" data-id="47">
+							<img src="images/icons/createit/mekanix.png" class="event-image">
+							<div class="event-name" data-name="mekanix">Mekanix</div>
+							<div class="border-bottom"></div>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<!-- In Focus -->
+			<div class="content__item" id="infocus" style="width: 100%;">
+				<img class="content__item-img rounded-right" src="images/categories/Create_it.png" alt="Create It" />
+				<div class="content__item-inner" style="width: 100%;">
+					<h2>In Focus</h2>
+					<div class="row">
+						<div class="col-md-4 event" data-id="26">
+							<img src="images/icons/infocus/crumbs.png" class="event-image">
+							<div class="event-name" data-name="crumbs">Crumbs</div>
+							<div class="border-bottom"></div>
+						</div>
+						<div class="col-md-4 event" data-id="27">
+							<img src="images/icons/infocus/odyssey.png" class="event-image">
+							<div class="event-name" data-name="odyssey">Odyssey</div>
+							<div class="border-bottom"></div>
+						</div>
+						<div class="col-md-4 event" data-id="28">
+							<img src="images/icons/infocus/shootmup.png" class="event-image">
+							<div class="event-name" data-name="shootmup">Shoot 'M' Up</div>
+							<div class="border-bottom"></div>
+						</div>
+						<div class="col-md-4 event" data-id="29">
+							<img src="images/icons/infocus/insta.png" class="event-image">
+							<div class="event-name" data-name="instaclick">Insta Click</div>
+							<div class="border-bottom"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Newron -->
+			<div class="content__item" id="newron" style="width: 100%;">
+				<img class="content__item-img rounded-right" src="images/categories/Create_it.png" alt="Create It" />
+				<div class="content__item-inner" style="width: 100%;">
+					<h2>Newron</h2>
+					<div class="row">
+						<div class="col-md-4 event" data-id="30">
+							<img src="images/icons/newron/electronic.png" class="event-image">
+							<div class="event-name" data-name="electronic">Electronically Yours</div>
+							<div class="border-bottom"></div>
+						</div>
+						<div class="col-md-4 event" data-id="31">
+							<img src="images/icons/newron/btechquiz.png" class="event-image">
+							<div class="event-name" data-name="thequiz">The Quiz</div>
+							<div class="border-bottom"></div>
+						</div>
+						<div class="col-md-4 event" data-id="32">
+							<img src="images/icons/newron/debate.png" class="event-image">
+							<div class="event-name" data-name="debate">Youth Parliament</div>
+							<div class="border-bottom"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Elevation -->
+			<div class="content__item" id="elevation" style="width: 100%;">
+				<img class="content__item-img rounded-right" src="images/categories/Create_it.png" alt="Create It" />
+				<div class="content__item-inner" style="width: 100%;">
+					<h2>Elevation</h2>
+					<div class="col-md-4 event" data-id="33">
+						<img src="images/icons/elevation/cad.png" class="event-image">
+						<div class="event-name" data-name="cadomania">Cad-o-mania</div>
+						<div class="border-bottom"></div>
+					</div>
+					<div class="col-md-4 event" data-id="34">
+						<img src="images/icons/elevation/bridge.png" class="event-image">
+						<div class="event-name" data-name="nirmaan">Nirmaan</div>
+						<div class="border-bottom"></div>
+					</div>
+				</div>
+			</div>
+
+				<!-- About us -->
+			<div class="content__item" id="aboutus" style="width: 100%;">
+				<div class="content__item-inner" style="width: 100%;">
+					<!--<div class="row"><h2 style="float:left">Techno India</h2></div>-->
+					<div class="row" style="width:80%; text-align: justify; margin-top: 50px">
+						<p>EDGE is the annual techno-management fest of Techno India Salt Lake. The first edition of EDGE was conceived in 2007, and it has been a long and pleasant journey so far. This year, we are celebrating our 10th anniversary. And we dedicate this edition to all the effort and imagination that has been put in by all the individuals who have worked towards making EDGE a grand success.</p>
+
+						<p>EDGE provides a much needed platform to the students that lets them explore and develop their talents, and helps them grow and emerge as winners.</p>
+
+						<p>Join us in celebrating a decade of imagination. Join us and witness the amalgamation of talent, persistence and an urge to succeed. Join us and witness history in making.</p>
+					</div>
+				</div>
+			</div>
+			<style>
+				.no-underline:hover{
+					text-decoration: none;
+				}
+.guest-name{    font-family: Arkhip;
+    font-size: 1.5em;
+    }
+.guest-info{    font-family: Arkhip;
+    font-size: 1em;
+    }
+			</style>
+		<!-- Fun Event -->
+			<div class="content__item" id="funevent" style="width: 100%;">
+				<div class="content__item-inner" style="width: 100%;">
+				<div class="row">
+					<img src="images/fun_event.png" height=400>
+				</div>
+				</div>
+			</div>
+		<!-- Edg Night -->
+			<div class="content__item" id="edgnight" style="width: 100%;">
+				<div class="content__item-inner" style="width: 100%;">
+<div class="row"
+					<div class="col-md-6" style="text-align:right">
+						<img src="images/guest/biswa.png" height=400><div class="guest-name" style="margin-right:20px">Biswa Kalyan Rath</div><div class="guest-info">Comedian . YouTuber . Pretentious Movie Reviewer.</div>
+
+					</div>
+					<div class="col-md-6">
+						<img src="images/guest/kartik.png" height=400><div class="guest-name" style="margin-left:20px">Kartik Aryan</div><div class="guest-info">Actor . Pyaar Ka Puchnama Guy.</div>
+					</div>
+				</div>
+			</div>
+<!-- Edg Talk -->
+			<div class="content__item" id="edgtalks" style="width: 100%;">
+				<div class="content__item-inner" style="width: 100%;">
+					<div class="col-md-6" style="text-align:right">
+						<img src="images/guest/arunabh.png" height=400><div class="guest-name" style="margin-right:20px">Arunabh Kumar</div><div class="guest-info">Founder & Group CEO, The Viral Fever & TVF Media Labs. IITKGP Alumni. The Qtiyapa Guy</div>
+
+					</div>
+					<div class="col-md-6">
+						<img src="images/guest/som.png" height=400><div class="guest-name" style="margin-left:20px">Dr. Som Singh Dutta</div><div class="guest-info">Founder of Unspun Marketing. Entrepreneur.</div>
+					</div>
+				</div>
+			</div>
+				<!--Reach out -->
+			<div class="content__item" id="reachus" style="width: 100%;">
+				<div class="content__item-inner" style="width: 100%;">
+					<h2>Reach Out To Us</h2>
+					<div class="col-md-8" style="text-align: left;margin-top: 50px;padding-left: 0px;">
+						<div id="map" style="width:90%; height: 400px"></div>
+					</div>
+					<div class="col-md-4" style="margin-top: 50px; display: table; height: 400px">
+						<div style="display: table-cell; width: 100%; height: 100%; vertical-align: middle; text-align: center; font-family: 'Arkhip'">
+							<p>Got a question? Or a suggestion? Or simply want to say hi?</p>
+							<p><a class="no-underline" href="mailto:ifest2016daiict@gmail.com" style="color: white; border-bottom: 1px dashed white">Let us know how we can help</a></p>
+							<p>Or</p>
+							<p><b>Contact:</b> <br>Nilay Shrimali:<br>+91-7046295423<br><br>Harsh Thakkar:<br>+91-8866821682</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<style type="text/css">
+			.sponsor-card{
+				text-align: center;
+				margin-top: 10px;
+			}
+                                        
+			.sponsor-title{
+				font-family: 'Adam';
+				font-variant: small-caps;
+				letter-spacing: 5px;
+				font-size: 14px;
+				margin-top: 5px;
+			}
+			.form-control{
+				border-radius: 0px !important;
+			}
+			label{
+				font-weight: 300 !important;
+			}
+			.form-control{
+				background: transparent;
+				border: 0px;
+				border-bottom: 2px solid white;
+			}
+			.form-control:focus{
+				border-color: white;
+				box-shadow: none;
+			}
+			</style>
+			<!-- Events -->
+			<div class="content__item" id="campusambassador" style="width: 100%;">
+				<img class="content__item-img rounded-right" src="images/robot_mod.png" alt="Apple Watch Content" />
+				<div class="content__item-inner" style="width: 100%;margin-bottom:400px;">
+					<h2>Events</h2>
+					<div class="row">
+
+						<p>Tentative Dates and Venues</p>
+						<br>
+						<p><strong>TECHNICAL EVENTS</strong></p>
+<p><strong>1)</strong> <strong>i.Biz</strong></p>
+<p>Date:&nbsp;<br /> Time:&nbsp;<br /> Venue: LT&nbsp;<br /> Event Duration: 3:30 hours</p>
+<p>Do you have any business idea? It's your chance to make it to the next stage! i.Biz is an event to promote Entrepreneurship, especially to encourage young Entrepreneur minds. &nbsp; So Frame your idea into a proper business plan and register here, who knows next Facebook or Flipcart is just one step away..!!</p>
+<p>The competition is divided into two phases:</p>
+<p>Phase 1:Registration</p>
+<p>Teams have to submit their business idea along with small presentation with proper description and contact of each team member to <a href="mailto:ibiz.ifest16@gmail.com">ibiz.ifest16@gmail.com</a></p>
+<p><strong>(Dates must be mentioned i.e. prior to how many days)</strong></p>
+<p>&nbsp;</p>
+<p>2) Phase 2:Main Event</p>
+<p>Shortlisted teams have to give a detailed presentation of their business plan in front of judges. Each team will have 12 minutes to present their plan and there will be 3 minute Question-Answer session for each team by judges.</p>
+<p>Deadline to register - 16 October(12:00:01 AM)</p>
+<p>Contact Details:</p>
+<ol>
+    <li>
+        <p>Khushil Mistry-9558051581</p>
+    </li>
+    <li>
+        <p>Saumya Doshi- 7574852042</p>
+    </li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>2)i.Quiz</strong></p>
+<p>Date:&nbsp;<br /> Time:&nbsp;<br /> Venue: <br /> Event Duration:</p>
+<p>I.Quiz is back again to tickle those grey cell in your head. It will be delicacy to test your curiosity and how creatively you patch your facts with big O. The quiz will be consisting of all the topics in which sci-fi or technology could be thought of. All enthusiasts are welcome to flaunt their knowledge, &nbsp;put their Sherlock skills to test to work through questions and experience the feel on closely missing out on your guess. &nbsp;Attractive prizes at stake.</p>
+<p>Rules:</p>
+<p>1) Teams of 2</p>
+<p>2) Written elimination followed by 8 teams qualifying for finals (Number of teams subject to changes)</p>
+<p>3) Cross college teams allowed.</p>
+<p>Contact Details:</p>
+<ol>
+    <li>
+        <p>Roshan Shah (9998956768)</p>
+    </li>
+    <li>
+        <p>Rajat Garg (7228965826)</p>
+    </li>
+</ol>
+<p>&nbsp;</p>
+<p>3)<strong>i.Ganith</strong></p>
+<p>Date:&nbsp;<br /> Time:&nbsp;<br /> Venue: LT&nbsp;<br /> Event Duration: 3:30 hours</p>
+<p>For math geeks who love walking through numbers, this is an event where mathematical skills stand out. Come show us your mathematical instinct.</p>
+<p>The event will consist of three rounds. First two rounds will be conducted on day1 and the third round on next day. First and second round will be pen-paper followed by an auction quiz(questions will be related to maths only) as the third round.<br /> Those qualifying the first round will succeed to the second round and those qualifying the second round will advance to the third(final) round.</p>
+<p>Round 1 (60 mins) (Students can participate in pairs or as individual. Pairs can't be altered thereafter)<br /> This round will consist of 20 MCQ type questions. Majority of the questions will be simple as in this round we are just trying to figure out the accuracy of the contestants.<br /> Half of the total contestants will be selected for the second round.<br /> Copies will be checked on the spot.</p>
+<p>Round 2 (60 mins)<br /> This round will consist of 20 questions with varying difficulty level. The questions will be subjective as well as objective.&nbsp;<br /> Only top 10 (teams + individual) will advance to the final round.&nbsp;<br /> Copies will be checked on the spot.</p>
+<p>NOTE: Some of the questions in both the rounds will be asterisked. Contestants participating as individual will get double the score for these(asterisked) questions if answered correctly.<br /> &nbsp; &nbsp; &nbsp; These questions will also be used as tie-breakers. This system will bring individual and pair on same level.&nbsp;</p>
+<p>Round 3 (60 mins)<br /> This is an auction quiz. A question will be displayed for 30 seconds, thereafter students have to raise a bid for the question. Team/individual with highest bidding gets chance to answer the question, if they are unable to answer, then team with second highest bidding gets chance to answer. If they are also unable to answer, then question is dropped. &nbsp; &nbsp;&nbsp;<br /> Top three teams get prizes.&nbsp;</p>
+<p>Contact Details:&nbsp;<br /> Darsh Vajaria : 7228899400&nbsp;<br /> Smit Patel &nbsp; &nbsp; : 9512679129</p>
+<p>&nbsp;</p>
+<p><strong>4) BLIND C</strong></p>
+<p>Date:&nbsp;<br /> Time:&nbsp;<br /> Venue: &nbsp;<br /> Event Duration:</p>
+<p>Wanna try something crazy and fun ?&nbsp;</p>
+<p>We suggest coding with your eyes closed. Yes you heard us right !</p>
+<p>Participate in Blind C. A simple coding contest where you code in basic C language while your monitor is switched off.&nbsp;</p>
+<p>Two hours of nail biting excitement and brain storming, where even newbies have a chance.</p>
+<p>Best of all you could walk away with amazing prizes.</p>
+<p>Rules:</p>
+<p>Contact Details:&nbsp;<br /> Divyanshu Shekhar : 8128496516&nbsp;<br /> Sakshi Sharma&nbsp; &nbsp; : 8511450249</p>
+<p>&nbsp;</p>
+<p><strong>5) i.Rubble</strong></p>
+<p>Date:&nbsp;<br /> Time:&nbsp;<br /> Venue: <br /> Event Duration:</p>
+<p>&nbsp;</p>
+<p>"MAKING SENSE OUT OF THINGS WHICH HAVE ABSOLUTELY NO SENSE"</p>
+<p>Unleash the creativity of your brain, dirty your hands in the pursuit of treasure from garbage</p>
+<p>&nbsp;</p>
+<p>Gear up as this i-fest pours in with a new and more thrilling challenge to make your adrenalin&nbsp;rush in your nerves. Teams will be provided with scrap items to work on the Problem Statement which will be given to the teams on the spot. Participants have to come up with&nbsp;a working prototype of their idea.&nbsp;</p>
+<p>Contact Details:</p>
+<p>Karn Vadaliya(8980433856)</p>
+<p>Priyam Suthar(8511205662)</p>
+<p>&nbsp;</p>
+<p><strong>6) &nbsp;i.Ride</strong></p>
+<p>Date:&nbsp;<br /> Time:&nbsp;<br /> Venue: <br /> Event Duration:</p>
+<p>It is a slow cycle riding competition where the one who comes last, wins. Only, there's a slight twist adding tons of fun to it! Adding a technical touch, the contestants will have to solve an extremely trivial puzzle while riding the bicycle itself.</p>
+<p>Neelanshi Varia(9913304142)</p>
+<p>Nidhi Davawala(9825170779)</p>
+<p>&nbsp;</p>
+<p><strong>7)</strong> <strong>i.Relay</strong></p>
+<p>Date:&nbsp;<br /> Time:&nbsp;<br /> Venue: <br /> Event Duration:</p>
+<p>Three coders united in ONE! Yes, that's what it is. i.Relay is for those who can communicate with their code.&nbsp;</p>
+<p>First time ever a relay coding event being organized where every skills speed, aptitude, understanding, teamwork everything is going to be tested.</p>
+<p>&nbsp;</p>
+<p>Rules and FollowUp:-</p>
+<p>&nbsp;</p>
+<p>Contact Details:</p>
+<ol>
+    <li>
+        <p>Divyesh Savaliya : 8980857230</p>
+    </li>
+    <li>
+        <p>Parshwa Shah : 8735925088</p>
+    </li>
+</ol>
+<p>&nbsp;</p>
+<p><strong style="font-family: 'Times New Roman', serif;">8) i.Electro</strong></p>
+<p>Do you get amused while playing with Electronics? If yes, then this is a golden opportunity for you to unleash your talent. If not, then also it's an awe-inspiring platform to have fun.</p>
+<p>&nbsp;</p>
+<p><strong>Phase 1</strong></p>
+<p>Date: &nbsp;22th October,2016</p>
+<p>Time: 3:00 pm</p>
+<p>Venue: LT</p>
+<p>Duration: 3 hours</p>
+<p>MCQ Based Questions:</p>
+<p>This phase consist MCQ based Question on different field like Digital Logic Design, Basic Electronic Circuit, Electro Static, Electro dynamics.</p>
+<p><strong>Phase 2</strong></p>
+<p>Date: 23<sup>rd</sup> October,2016</p>
+<p>Time: 1:00 pm</p>
+<p>Venue: Lab</p>
+<p>Duration: 3 hours</p>
+<p>The list of phase 1 cleared participant will be made. The team will be formed . Each team will contain one 1<sup>st</sup> year student. So they can learn with seniors.</p>
+<p>Hardware Based::</p>
+<p>Arduino, Sensors, wires, this kind of component will be given. Participants have to make something new using this and their work will be judged and winner team will be decided.</p>
+<p><strong>Rules And Regulations:</strong></p>
+<ol>
+    <li>
+        <p>Unfair Led&rsquo;s to immediate disqualification.</p>
+    </li>
+    <li>
+        <p>In case of any disputes, decision of IEEE Student Brach DAIICT will be final.</p>
+    </li>
+</ol>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Contact Details:</strong></p>
+<p>1)Ketan Paladiya(9687497646)</p>
+<p>2)Dvijesh Patel(8140476157)</p>
+<p>&nbsp;</p>
+<p><strong>9) i.Decipher</strong></p>
+<p>Date:&nbsp;<br /> Time:&nbsp;<br /> Venue: <br /> Event Duration:</p>
+<p>Have you ever thought of yourself lost in a maze full of challanges?</p>
+<p>Do you think your mind can decode the puzzles presented in form of images?</p>
+<p>Well here is your chance to check yourself out.</p>
+<p>Presented a range of visual clues and neuron twisting questions to solve, this one is the fun event to put your minds(and googling skills!) on work.</p>
+<p>&nbsp;</p>
+<p>--&gt; Rules : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+<p>1.Team Size is 2. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p>2.Only one member can login at a time. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+<p>3.Ensure that your email address used during registration is used consistently by you as we shall contact you through that email address. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+<p>4.You may use the internet during the event. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+<p>5.The one team that finishes all questions first shall be declared winner.</p>
+<p>6.Further rules will be given at the time of the event.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>--&gt; TIPS :</p>
+<p>1.There will be questions in form of the images, which you will have to decode what it says or represents. To do this you collectively need to apply your general knowledge and skills of &ldquo;connected thinking&rdquo;.</p>
+<p>2.You need to acknowledge and retrieve your great knowledge of google search and google image search.</p>
+<p>&nbsp;</p>
+<p><strong>Contact Details:</strong></p>
+<p>Parth Chauhan(9998109590&nbsp;)</p>
+<p>Biren Prajapati(9099260117&nbsp;)</p>
+<p>&nbsp;</p>
+<p><strong>10) Treasure Hunt</strong></p>
+<p>Date:&nbsp;<br /> Time:&nbsp;<br /> Venue: <br /> Event Duration:</p>
+<p>Treasure Hunt is one of the non-technical and fun-filled events of i.Fest. Who doesn't enjoy being a detective for once and solve clues ? Infact , you detectives are gonna receive prizes along the way too!! So here's your chance to engage into one of the most happening events of i.Fest. You get to roam around the beautiful campus, make new friends , and simply enjoy , forgetting the technical stuff for sometime!! In addition to that, this time we have got for you an exiting theme. So gear up with your detective backpacks and a puzzle-solving brain!! Hope to see you there!!!</p>
+<p><strong>Contact Details:</strong></p>
+<p>Shubham Annadate - 9558393899</p>
+<p>Aashini Soni &ndash; 9601993658</p>
+<p><strong>10) i.Clash</strong></p>
+<p>Date:&nbsp;<br /> Time:&nbsp;<br /> Venue: <br /> Event Duration:</p>
+<p>Do you get an adrenaline rush while playing games? Then this event is what you've been waiting for! Bringing you the gaming experience of Mini Militia for the first time in i.Fest.</p>
+<p>DOTA:<br /> The very best players will be gutted against each other in this game which demands perfect team management and planning. This game will surely test your strategies to no end.<br /> <br /> FIFA 14:<br /> If you think you are the one who can control every player and compete against the best in the game, then this is where you ought to be.<br /> <br /> Counter Strike:<br /> Delve into the world of terrorists, CT&rsquo;s, where your ears pound with the sound of gunshots and bombs. It&rsquo;s not a game, this one&rsquo;s a war!! Go! Go! Go!<br /> <br /> NFS Most Wanted:<br /> The street is your kingdom. Your friends are your allies. You are on the wanted list of the State police department. Race through the city at break-neck speed, dodging cops, clearing milestones to be the ultimate NFS pro.<br /> <br /> Mini Milita:<br /> Experience intense multiplayer combat using local wi-fi. Lock and load cadet!</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Rules: <br /> 1) Only college students can participate in this event. Each team member must present their student ID card at the time of registration.<br /> 2) One player will be allowed to play from only one team.<br /> 3) If all the members of a team are not present at the time of their match then that team will be disqualified.<br /> 4) Teams can bring one extra player for substitution, but substitution can only be made before the game starts. During the game, player substitution and exchange of seats will not be allowed.<br /> 5) If a team is knocked out in hostel rounds then they can re-register for lab rounds but only those teams who were part of the hostel rounds will be allowed to re-register.<br /> 6) Pause/Resume Abuse: Pausing without any valid reason is disallowed. Resuming the game without the other team confirming that they are ready is not allowed either. If someone pauses the game without a valid reason, they will receive a warning.<br /> 7) In-case any player is disconnected, the game will be paused until that player reconnects.<br /> 8) In Dota, in case of server crash, new match will start with the same draft.<br /> 9) Any form of cheating or exploitation of bugs is not allowed. The team using any cheats/bugs will be disqualified immediately.<br /> 10) In case of any discrepancies the decision of the coordinators will be final and binding.</p>
+<p><strong>Contact Details:</strong></p>
+<p>Ishan Changela(8460238396)</p>
+<p>Akash Gajjar(9712581901)</p>
+<p>Vivek Kalola(8460388834)</p>
+<p>Hardik Ghusar(7359019067)</p>
+<p>&nbsp;</p>
+						<!-- <form>
+							<div class="form-group">
+								<label for="fullname">What shall we call you?</label>
+								<input type="text" class="form-control" id="fullname" placeholder="Harry Potter">
+							</div>
+							<div class="form-group">
+								<label for="college">And where do you study?</label>
+								<input type="text" class="form-control" id="college" placeholder="Hogwarts School of Magic">
+							</div>
+							<div class="form-group">
+								<label for="department">What department do you belong to?</label>
+								<input type="text" class="form-control" id="dept" placeholder="Department of Witchcraft">
+							</div>
+							<div class="col-md-6" style="padding-right: 15px; padding-left: 0px">
+								<div class="form-group">
+									<label for="year">What is your year of study?</label>
+									<select class="form-control" id="year">
+										<option>1st Year</option>
+										<option>2nd Year</option>
+										<option>3rd Year</option>
+										<option>4th Year</option>
+									</select>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6" style="padding: 0px">
+									<div class="form-group">
+										<label style="text-align:center" for="sex">Are you a female or a male?</label>
+										<div style="display: block; text-align: center">
+											<div class="col-md-6">
+												<label class="radio-inline">
+													<input type="radio" id="sex" value="Female" name="sex">Female
+												</label>
+											</div>
+											<div class="col-md-6">
+												<label class="radio-inline">
+													<input type="radio" id="sex" value="Male" name="sex">Male
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="email">Your email address please.</label>
+										<input type="email" class="form-control" id="email" placeholder="harrypotter@hogwarts.in">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="mobile">And your mobile number.</label>
+										<input type="email" class="form-control" id="mobile" placeholder="9000000007">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="why">Why do you want to become campus ambassador?</label>
+								<input type="email" class="form-control" id="why" placeholder="Snape is making me do this!">
+							</div>
+							<div class="form-group">
+								<label for="promotion">So, how do you plan to promote EDGE?</label>
+								<input type="email" class="form-control" id="promotion" placeholder="I will promote each and every event of EDGE.">
+							</div>
+							<div class="form-group">
+								<label for="aboutwhere">And how did you come to know about this?</label>
+								<p class="text-muted" style="font-size: .75em;">If through a friend in Techno India Salt Lake, please mention his/her name, department and year. </p>
+								<input type="email" class="form-control" id="aboutwhere" placeholder="Dumbledore told me.">
+							</div>
+
+							<button class="btn btn-default center-block" style='margin-bottom: 1em;' type="submit" id='formRespond'>SUBMIT</button>
+
+							<div class="alert alert-warning alert-dismissible invisible" role="alert" id='alert-response'>
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<strong>Oh Snape!</strong> Better check the form again, you're not looking too good.
+							</div>
+
+							<div class="alert alert-warning alert-dismissible invisible" role="alert" id='fail-response'>
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<strong>Oh Snape!</strong> There was an error submitting in your response. Kindly get back to the team at geekonix@gmail.com. We would be more than happy to help you.
+							</div>
+
+							<div class="alert alert-success alert-dismissible invisible" role="alert" id='success-response'>
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<strong>Nice!</strong> You shall be a part of the awesome experience !
+							</div>
+						</form> -->
+					</div>
+				</div>
+			</div>
+<style>.sponsor-card img{height:80px; max-width:100%} #sponsors .content__item-inner .row{padding: 20px; margin-bottom: 20px; border-bottom: 1px solid #292828;}</style>
+			<!-- Sponsors -->
+			<div class="content__item" id="sponsors" style="width: 100%;">
+				<div class="content__item-inner" style="width: 100%;">
+					<div id="sponsor-container"></div>
+				</div>
+			</div><style>.inner-text a{color:white}</style>
+
+
+
+<!-- ABOUT -->
+<div class="content__item" id="aboutus" style="width: 100%;">
+				<div class="content__item-inner" style="width: 100%;">
+					<h2>gallery</h2>
+					<div class="row">
+						
+					</div>
+				</div>
+			</div>
+
+
+
+<!-- gallery -->
+			<div class="content__item" id="gallery" style="width: 100%;">
+				<div class="content__item-inner" style="width: 100%;padding-bottom:400px;">
+					<h2>gallery</h2>
+					<div class="row">
+						<ul id="elasticstack" class="elasticstack">
+							<!-- <li><img src="images/photo.jpg" alt="01" style="height:300px;width:300px;" /></li> -->
+
+							<!-- <li><img src="images/photo.jpg" alt="02" style="height:300px;width:300px;" /></li> -->
+
+							<!-- <li><img src="images/photo.jpg" alt="03" style="height:300px;width:300px;" /></li> -->
+
+							<!-- <li><img src="images/photo.jpg" alt="04" style="height:300px;width:300px;" /></li> -->
+
+							<!-- <li><img src="images/photo.jpg" alt="05" style="height:300px;width:300px;" /></li> -->
+							
+							
+						</ul>
+
+					</div>
+				</div>
+			</div>
+			<!-- The Team -->
+			<div class="content__item row" id="theteam" style="width: 100%;">
+				<div class="content__item-inner col-md-10 col-xs-11 col-sm-11" style="width:100%">
+					<div class="honeycombs">
+						
+						
+						<div class="comb bwWrapper">
+							<img src="https://scontent.fbom1-1.fna.fbcdn.net/t31.0-8/s960x960/13576733_844898795644442_4933930468835444256_o.jpg" />
+							<span class="comb-member-name"><a href='https://www.facebook.com/nihaal.shrimali' target="_blank" >Nilay Shrimali<br><b>PR & Marketing Team</b><br></a></span>
+						</div>
+						<div class="comb bwWrapper">
+							<img src="https://scontent.fbom1-1.fna.fbcdn.net/t31.0-8/13925787_1169827703069400_423886529230760115_o.jpg" />
+							<span class="comb-member-name"><a href='https://www.facebook.com/saorav' target="_blank" >Saurav Pratihar<br><b>WEBMASTER</b><br></a></span>
+						</div>
+						<div class="comb bwWrapper">
+							<img src="https://scontent.fbom1-1.fna.fbcdn.net/v/t1.0-9/12631401_1012129322193467_6985394780155809338_n.jpg?oh=556109a65e62f7ddddfd396f4b49dd4e&oe=587E981F" />
+							<span class="comb-member-name"><a href='https://www.facebook.com/harshthakkar456' target="_blank" >Harsh Thakkar<br><b>Coordinator Management</b><br></a></span>
+						</div>
+						<div class="comb bwWrapper">
+							<img src="https://scontent.fbom1-1.fna.fbcdn.net/v/t1.0-9/13932801_1102023566551276_3439054284725103959_n.jpg?oh=006be19cbe58592a9e2b9058e4557189&oe=5878A021" />
+							<span class="comb-member-name"><a href='https://www.facebook.com/jay.shah.395454' target="_blank" >Jay Shah<br><b>Coordinator Management</b><br></a></span>
+						</div>
+						<div class="comb bwWrapper">
+							<img src="https://scontent.fbom1-1.fna.fbcdn.net/v/t1.0-9/552746_380240345332594_2037040634_n.jpg?oh=006aa1bdbfec96c9475f9dbc8189525d&oe=587DA7C1" />
+							<span class="comb-member-name"><a href='https://www.facebook.com/tirth.shah.3158' target="_blank" >Tirth Shah<br><b>App Developer</b><br></a></span>
+						</div>
+						
+						<div class="comb bwWrapper">
+							<img src="https://scontent.fbom1-1.fna.fbcdn.net/v/t1.0-9/13620138_1083886775014739_4068262595795835775_n.jpg?oh=5c4a0386bb75f03653a7f52f2fb4bf28&oe=584F14CF" />
+							<span class="comb-member-name"><a href='https://www.facebook.com/akar.sheth' target="_blank" >Akar Sheth<br><b>PR & Marketing Team</b><br></a></span>
+						</div>
+                                               
+						<div class="comb bwWrapper">
+							<img src="https://scontent.fbom1-1.fna.fbcdn.net/v/t1.0-9/13450868_1150875994976626_7991851939623026690_n.jpg?oh=dc91b9273651519ed11450954fa99602&oe=58380A57" />
+							<span class="comb-member-name"><a href='https://www.facebook.com/divya.solucky.6198' target="_blank" >Divya Solanki<br><b>PR & Marketing Team</b><br></a></span>
+						</div>
+						<div class="comb bwWrapper">
+							<img src="https://scontent.fbom1-1.fna.fbcdn.net/v/t1.0-9/12027616_958658297529878_1232967175790116062_n.jpg?oh=2c3c0ee242dc3b95b027ce7c07140141&oe=588556B7" />
+							<span class="comb-member-name"><a href='https://www.facebook.com/urvashi.jain.33' target="_blank" >Urvashi Banthia<br><b>Coordinator Management</b><br></a></span>
+						</div>
+						<div class="comb bwWrapper">
+							<img src="https://scontent.fbom1-1.fna.fbcdn.net/v/t1.0-9/12227594_1021489894562974_6341624524152700089_n.jpg?oh=4a8257cd555b12aab6780aac533f6da2&oe=5846B553" />
+							<span class="comb-member-name"><a href='https://www.facebook.com/prachi.agrawal.9659' target="_blank" >Prachi Agrawal<br><b>PR & Marketing Team</b><br></a></span>
+						</div>
+						<div class="comb bwWrapper">
+							<img src="https://scontent.fbom1-1.fna.fbcdn.net/v/t1.0-9/13164351_1008051372643265_5636257905653731449_n.jpg?oh=4c356fc99ea1b6914af08bf113a63ed1&oe=584D65C5" />
+							<span class="comb-member-name"><a href='https://www.facebook.com/prachi.palod.15' target="_blank" >Prachi Palod<br><b>Coordinator Management</b><br></a></span>
+						</div>
+						<div class="comb bwWrapper">
+							<img src="https://scontent.fbom1-1.fna.fbcdn.net/v/t1.0-9/13227203_1042054682498972_1340174194007951182_n.jpg?oh=2cdd09ca7982a16e525d404dd6528675&oe=5844495A" />
+							<span class="comb-member-name"><a href='https://www.facebook.com/milap.shah.144' target="_blank" >Milap Shah<br><b>Coordinator Management</b><br></a></span>
+						</div>
+<div class="comb bwWrapper">
+							<img src="https://scontent.fbom1-1.fna.fbcdn.net/v/t1.0-9/1920364_1377495735904035_3304381678232595307_n.jpg?oh=f0d2c0dcb83b70bddc0fa58468ee85d0&oe=587A3B28" />
+							<span class="comb-member-name"><a href='https://www.facebook.com/profile.php?id=100009308644191' target="_blank" >Birva Patel<br><b>Coordinator Management</b><br></a></span>
+						</div>
+
+					</div>
+				</div>
+			</div>	
+
+
+			<button class="button button--close" onclick="closeContent"><i class="fa fa-times"></i><span class="text-hidden">Close content</span></button>
+		</section>
+	</div>
+<style>.modal-event-contact-info{box-shadow:none; background:white} .modal-event-contact-name a:hover{color:#47639E; text-decoration:none} .modal-event-contact-name a{color:black}</style>
+	<!-- Modal -->
+<div class="modal fade" tabindex="-1" role="dialog" id="event-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="modal-event-name">Modal title</h4>
+      </div>
+      <div class="modal-body">
+      	<div id="modal-event-description">
+        There is a nice saying by a great man that "A designer knows he has achieved perfection not when there is nothing left to add but when there is nothing left to take away." Indeed a designer is a creator, creator of every single thing which we witness today. Starting from a needle to a spaceship, everywhere designers are required. And they need to be perfect and flawless. If you also think that you are with the caliber, then show that using coding as your sword and achieving victory.
+        </div>
+        <div id="modal-event-rules"><span><img src="images/pdf_intra.png" height="50"></span><span id="modal-event-rules-value"></span></div>
+        <hr>
+        <div id="modal-event-contacts">
+        	<div class="row">
+        		<div class="col-md-6 modal-event-contact-info" id="contact1">
+        			<div class="modal-event-contact-name"><a href="http://facebook.com/palash.chatterjee">Palash Chatterjee</a></div>
+        			
+        			<div class="modal-event-contact-phone"><i class="fa fa-phone"></i><span class="modal-event-contact-phone-value"></span></div>
+        		</div>
+        		<div class="col-md-6 modal-event-contact-info" id="contact2"><div class="modal-event-contact-name"></div>
+        			
+        			<div class="modal-event-contact-phone"><i class="fa fa-phone"></i><span class="modal-event-contact-phone-value"></span></div>
+</div>
+        	</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+	<footer>
+		Made with love
+	</footer>
+	<script src="js/classie.js"></script>
+	<script type="text/javascript" src="js/jquery.color-2.1.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.homeycombs.js"></script>
+	<script src="js/dynamics.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/lines.js"></script>
+	<script type="text/javascript" src="js/visible.js"></script>
+	<script type="text/javascript" src="js/border.js"></script>
+	<script type="text/javascript" src="js/mousemove.js"></script>
+	<script type="text/javascript" src="js/formSubmit.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+
+	$(document).ready(function(){
+			//$(".inner-text").css("line-height",$(".hex_inner").css("height"));
+			$('.event').line(animationDuration, "2px", "bottom","onhover", backgroundColor);
+			$(".event").click(function(){
+				name = $(this).find(".event-name").data("name");
+				$("#modal-event-title").html(name);
+				$("#event-modal").modal('show');
+				get_event_details($(this).data("id"));
+			});
+
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+
+
+	get_event_details = function(event_id){
+			$("#contact1").css("display","none");
+			$("#contact2").css("display","none");
+			$("#modal-event-description").html("");
+			$("#modal-event-name").html("");
+			$("#modal-event-rules").css("display","none");
+	$.ajax({
+			url:'details.php',
+			type: 'GET',
+			data: {event_id:event_id},
+			dataType:'json',
+			success:function(result){
+				//Name
+				$("#modal-event-name").html(result.name);
+				//Rules
+				if(result.file)
+					$("#modal-event-rules-value").html("<a target='_blank' href='content/"+result.file+"'>Download here</a>");
+				else
+					$("#modal-event-rules-value").html("Rules will be updated soon");
+				$("#modal-event-rules").css("display","block");
+				//Desc
+				if(result.desc)
+					$("#modal-event-description").html(result.desc);
+				//Contact 1
+				if(result.contact1){
+					name = result.contact1.name;
+					facebook = result.contact1.facebook;
+					phone = result.contact1.phone;
+					$("#contact1 .modal-event-contact-name").html("<a href='http://facebook.com/"+facebook+"/' target='_blank'>"+name+"</a>");
+					$("#contact1 .modal-event-contact-phone-value").html(phone);
+					$("#contact1").css("display","block");
+				}
+				//Contact 2
+				if(result.contact2){
+					name = result.contact2.name;
+console.log(name);
+					facebook = result.contact2.facebook;
+					phone = result.contact2.phone;
+					$("#contact2 .modal-event-contact-name").html("<a href='http://facebook.com/"+facebook+"/' target='_blank'>"+name+"</a>");
+					$("#contact2 .modal-event-contact-phone-value").html(phone);
+					$("#contact2").css("display","block");
+				}
+			}
+	});
+}
+//anm.on();
+
+
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7I0zl-Rfn80eevI_Zq9Bbb6PDUqXAdb4"></script>
+			<script type="text/javascript">
+					/*Google Maps Setup*/
+	function initMaps(){
+		var canvas = document.getElementById('map');
+		var position = new google.maps.LatLng(23.1879365,72.6275934);
+		var mapOptions = {
+			center: position,
+			zoom: 17,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		}
+		var map = new google.maps.Map(canvas, mapOptions);
+
+		var marker = new google.maps.Marker({
+			position: position,
+			map: map,
+			title: "See you there!",
+			draggable: false,
+			animation: google.maps.Animation.BOUNCE
+		});
+	}
+
+	google.maps.event.addDomListener(window, 'load', initMaps);
+
+// $.getJSON('http://www.edg.co.in/getsponsor.php', function(data){
+//                  var counter = 1;
+// var el = "";
+// 		$.each(data, function(key, value){
+// 			var logo_img = value['logo_url'];
+// 			var title = value['title'];
+// 			var url = value['url'];
+// 			var height = value['height'];
+// 			var style = "";
+// 			if(value['style'])
+// 				style=value['style'];
+// console.log("Counter : "+counter+" : "+title);
+//                                              if(counter == 1)
+// 				el += "<div class='row'>";
+// 			el += '<a href='+url+'><div height="'+height+'"class="col-md-4 sponsor-card"><img style="'+style+'" src="'+logo_img+'"><div class="sponsor-title">'+title+'</div></div></a>';
+// 			counter = counter + 1;
+// 			if(counter == 4){
+// 				el += "</div>";
+// 				counter = 1;
+// 			}
+// 					});
+// 	$("#sponsor-container").append(el);
+// 	})
+
+			</script>
+<script>
+	new ElastiStack( document.getElementById( 'elasticstack' ),{distDragBack : 200,
+	// distDragMax: if the user drags the image in a area that exceeds [distDragMax]px 
+	// for either x or y then the image moves away from the stack 
+	distDragMax : 450,
+	// callback
+	onUpdateStack : function( current ) { return false; }} );
+</script>
+</body>
+</html>
